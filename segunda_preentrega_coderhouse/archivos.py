@@ -33,4 +33,3 @@ def guardar_clientes(clientes):
     with open('archivo_clientes.txt', 'w') as file:
         for cliente in clientes:
             file.write(f"{cliente.nombre},{cliente.apellido},{cliente.dni},{cliente.telefono},{cliente.direccion},{cliente.estado},{cliente.id},{cliente.cant_compras},{cliente.total_cta}\n")
-    file.close() #Cierro el archivo para prevenir errores. 
